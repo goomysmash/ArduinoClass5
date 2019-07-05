@@ -18,6 +18,32 @@
   - `break;`
   - `case 3:`
   - `break;}}`
+### 3. Use the flowchart to fill out the cases and transitions from one case to another
+- New code lines:
+  - `blinkStateMachine();`
+  - `if((millis()-blinkStartTime)>blinkDelay){blinkSwitchState=1;}`
+  - `blinkStartTime = millis();`
+  - `digitalWrite(13, HIGH);`
+  - `blinkSwitchState = 2;`
+  - `if((millis()-blinkStartTime)>blinkDelay){blinkSwitchState=3;}`
+  - `blinkStartTime = millis();`
+  - `digitalWrite(13, LOW);`
+  - `blinkSwitchState = 0;`
+- Comment out digitalWrite(13, HIGH); line after the if statement:
+  - `if (counter > 5){`
+  - `digitalWrite(13, HIGH);`
+- (Upload and watch LEDs)
+### 4. Change the value of blinkDelay to show that the LED can be blinking at any rate
+- Line to modify:
+  - `long blinkDelay = 500;`
+- To:
+  - `long blinkDelay = 250;`
+- (Upload and watch LEDs)
+
+
+- ``
+- ``
+- ``
 
 
 
