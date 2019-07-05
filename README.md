@@ -40,10 +40,8 @@
   - `long blinkDelay = 250;`
 - (Upload and watch LEDs)
 
-
-- ``
-- ``
-- ``
+### Lessons learned
+- With state machines you can do 2 tasks completely independently, as long as you don't have those pesky delay() statements
 
 
 
